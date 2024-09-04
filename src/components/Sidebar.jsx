@@ -9,6 +9,8 @@ function Sidebar() {
     <div className={styles.sidebar}>
       <Logo />
       <AppNav />
+      {/* all routes defined in the AppLayout path element are children of this element 
+      we keep them in Outlet (react router element) */}
       <Outlet />
       <Footer />
     </div>
