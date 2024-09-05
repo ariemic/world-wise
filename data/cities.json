@@ -49,18 +49,6 @@
       }
     },
     {
-      "id": "ccac",
-      "cityName": "Sarsina",
-      "country": "Italy",
-      "emoji": "🇮🇹",
-      "date": "2024-09-05T12:20:19.138Z",
-      "notes": "",
-      "position": {
-        "lat": "43.97700467496408",
-        "lng": "12.106933593750002"
-      }
-    },
-    {
       "id": "bf5b",
       "cityName": "Mar’ina Gorka",
       "country": "Belarus",
@@ -82,30 +70,6 @@
       "position": {
         "lat": "44.5278427984555",
         "lng": "4.328613281250001"
-      }
-    },
-    {
-      "id": "146a",
-      "cityName": "Foggaret Ezzaou",
-      "country": "Algeria",
-      "emoji": "🇩🇿",
-      "date": "2024-09-05T12:28:45.955Z",
-      "notes": "yep",
-      "position": {
-        "lat": "27.13736835979561",
-        "lng": "3.4716796875000004"
-      }
-    },
-    {
-      "id": "7a22",
-      "cityName": "Ereymentau",
-      "country": "Kazakhstan",
-      "emoji": "🇰🇿",
-      "date": "2024-09-05T12:31:42.110Z",
-      "notes": "",
-      "position": {
-        "lat": "51.39920565355378",
-        "lng": "72.50976562500001"
       }
     },
     {
