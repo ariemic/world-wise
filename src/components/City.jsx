@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
-import styles from "./City.module.css";
-import { useCities } from "../contexts/CitiesContext";
 import { useEffect } from "react";
-import Button from "./Button";
+import { useParams } from "react-router-dom";
+import { useCities } from "../contexts/CitiesContext";
+import BackButton from "./BackButton";
+import styles from "./City.module.css";
+import Spinner from "./Spinner";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
@@ -14,7 +15,7 @@ const formatDate = (date) =>
 
 function City() {
   const { id } = useParams();
-  const { getCity, currentCity } = useCities();
+  const { getCity, currentCity, isLoading } = useCities();
 
   // I can't use here arrow function because then it doesn't work WHY???
   useEffect(
@@ -25,6 +26,8 @@ function City() {
   );
 
   const { cityName, emoji, date, notes } = currentCity;
+
+  if (isLoading) return <Spinner />;
 
   return (
     <div className={styles.city}>
@@ -58,7 +61,7 @@ function City() {
         </a>
       </div>
 
-      <Button type="back">Back</Button>
+      <BackButton />
     </div>
   );
 }
