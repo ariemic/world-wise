@@ -3,7 +3,7 @@ import { createContext, useContext, useReducer } from "react";
 const AuthContext = createContext();
 
 const FAKE_USER = {
-  name: "Jack",
+  name: "Ariel",
   email: "jack@example.com",
   password: "qwerty",
   avatar: "https://i.pravatar.cc/100?u=zz",
@@ -48,10 +48,13 @@ function AuthProvider({ children }) {
   );
 }
 
+// That's custom hook we use in Login to take value, is set up by AuthProvider
+// Don't forget to return a context !!!!
 function useAuth() {
   const context = useContext(AuthContext);
   if (context === undefined)
     throw new Error("Context was used outside AuthProvider");
+  return context;
 }
 
 export { AuthProvider, useAuth };
