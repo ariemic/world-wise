@@ -37,51 +37,15 @@
       "id": "98443197"
     },
     {
-      "id": "df91",
-      "cityName": "Tirhanimine",
-      "country": "Algeria",
-      "emoji": "🇩🇿",
-      "date": "2024-09-05T12:19:02.626Z",
+      "id": "b940",
+      "cityName": "Oslo",
+      "country": "Norway",
+      "emoji": "🇳🇴",
+      "date": "2024-09-06T08:34:47.060Z",
       "notes": "",
       "position": {
-        "lat": "35.137879119634185",
-        "lng": "6.1962890625"
-      }
-    },
-    {
-      "id": "bf5b",
-      "cityName": "Mar’ina Gorka",
-      "country": "Belarus",
-      "emoji": "🇧🇾",
-      "date": "2024-09-05T12:21:02.365Z",
-      "notes": "yeuyeu\n",
-      "position": {
-        "lat": "53.592504809039376",
-        "lng": "28.01513671875"
-      }
-    },
-    {
-      "id": "8823",
-      "cityName": "Vinezac",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2024-09-05T12:23:35.025Z",
-      "notes": "",
-      "position": {
-        "lat": "44.5278427984555",
-        "lng": "4.328613281250001"
-      }
-    },
-    {
-      "id": "c59c",
-      "cityName": "Moscow",
-      "country": "Russian Federation (the)",
-      "emoji": "🇷🇺",
-      "date": "2024-09-05T12:34:28.061Z",
-      "notes": "",
-      "position": {
-        "lat": "55.74102787471819",
-        "lng": "37.60894775390626"
+        "lat": "59.95501026206206",
+        "lng": "10.920410156250002"
       }
     }
   ]
