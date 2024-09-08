@@ -1,4 +1,10 @@
-import { createContext, useContext, useEffect, useReducer } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useReducer,
+} from "react";
 
 const BASE_URL = "http://localhost:8000";
 
@@ -79,20 +85,23 @@ function CitiesProvider({ children }) {
   //  Why getCity is not in useEffect hook and why is it legal?
   // Yep it's legal if when we call the function we are obligated to use wrap it in useEffect look at City component
   // We can't use async logic in reducer because it only takes pure functions
-  async function getCity(id) {
-    if (id === currentCity.id) return;
-    try {
-      dispatch({ type: "loading" });
-      const res = await fetch(`${BASE_URL}/cities/${id}`);
-      const data = await res.json();
-      dispatch({ type: "city/loaded", payload: data });
-    } catch {
-      dispatch({
-        type: "rejected",
-        payload: "There is a problem with loading a city data...",
-      });
-    }
-  }
+  const getCity = useCallback(
+    async function getCity(id) {
+      if (id === currentCity.id) return;
+      try {
+        dispatch({ type: "loading" });
+        const res = await fetch(`${BASE_URL}/cities/${id}`);
+        const data = await res.json();
+        dispatch({ type: "city/loaded", payload: data });
+      } catch {
+        dispatch({
+          type: "rejected",
+          payload: "There is a problem with loading a city data...",
+        });
+      }
+    },
+    [currentCity.id]
+  );
 
   async function createCity(newCity) {
     try {
