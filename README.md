@@ -36,9 +36,8 @@ Every new location looks like this
 
 - react with javascript
 - react router for page navigation
-- redux for remote state menagement
 - react leaflet for map display and picking position actions
-- tailwind CSS for styling
+- css modules for styling
 
 ## How is it look?
 
